@@ -6,7 +6,7 @@ highlighter:      rouge
 title:            Prateek
 tagline:          'Beast from the East'
 description:      'Pittsburgh, PA'
-url:              https://prateek3576.github.io
+url:              https://prateek3576.github.io        
 baseurl:          ''
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
@@ -17,7 +17,6 @@ baseurl:          ''
 author:
   name:           'Prateek Bhatt'
   url:            https://prateek3576.github.io
-  baseurl:        /prateek3576
 
 paginate:         5
 # paginate_path:    '/page:num'
