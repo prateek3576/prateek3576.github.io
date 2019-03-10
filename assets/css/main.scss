@@ -22,4 +22,22 @@ $sidebar-sticky: false;
   }
 }
 
+.flex-container {
+  display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  //align-items: stretch;
+  //background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  margin: 10px;
+}
+
+.notbold{
+    font-weight:normal;
+    text-decoration: none;
+}
+
 @import "hydeout";
+
