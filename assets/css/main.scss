@@ -14,4 +14,12 @@ $sidebar-sticky: false;
 
 }
 
+@media only screen and (max-width: 600px) {
+  #rdImg {
+    width:60%;
+    margin-left: auto;
+  margin-right: auto;
+  }
+}
+
 @import "hydeout";

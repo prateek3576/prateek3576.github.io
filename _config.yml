@@ -5,7 +5,7 @@ highlighter:      rouge
 # Setup
 title:            Prateek
 tagline:          'Beast from the East'
-description:      'Welcome to my webpage'
+description:      'Pittsburgh, PA'
 url:              https://prateek3576.github.io
 baseurl:          ''
                   # the optional subpath of your site, e.g. "/blog"
