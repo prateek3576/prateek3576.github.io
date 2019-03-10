@@ -17,6 +17,7 @@ baseurl:          ''
 author:
   name:           'Prateek Bhatt'
   url:            https://prateek3576.github.io
+  baseurl:        /prateek3576
 
 paginate:         5
 # paginate_path:    '/page:num'
