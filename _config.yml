@@ -27,6 +27,7 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Sidebar link settings
 sidebar_home_link:  true
