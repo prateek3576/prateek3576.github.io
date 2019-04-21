@@ -2,92 +2,117 @@
 layout: page
 title: About Me
 ---
-<div class="jumbotron">
-    <h1>University of Pittsburgh</h1>
+<div class="jumbotron" style="text-align:center">
+    <h1>Prateek Bhatt</h1>
+    <h2>University of Pittsburgh</h2>
     <h3>Swanswon School of Engineering</h3>
     <h5>Bachelor of Science in Computer Engineering | April 2020</h5>
 
-    <table class="table table-hover">
-        <!--Skills and Proficiencies-->
-        <thead>
-            <tr>
-                <th scope="col">
-                    <h4>Skills &amp; Proficiencies</h4>
-                </th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><abbr title="Hyper text markup language" class="notbold">* HTML</abbr></td>
-                <td><abbr title="" class="notbold">* CSS</abbr></td>
-                <td><abbr title="" class="notbold">* C/C++</abbr></td>
-            </tr>
-            <tr>
-                <td><abbr title="Hyper text markup language" class="notbold">* PHP</abbr></td>
-                <td>* Abode Illustrator</td>
-                <td><abbr title="" class="notbold">* MATLAB</abbr></td>
-            </tr>
-            <tr>
-                <td>* JavaScript</td>
-                <td>* Wordpress</td>
-                <td>* Swift</td>
-            </tr>
-            <tr>
-                <td>* Java</td>
-                <td>* SQL</td>
-                <td>* iOS App Development</td>
-            </tr>
-            <tr>
-                <td>* UNIX</td>
-                <td>* Adobe Photoshop</td>
-                <td>* Microsoft Office</td>
-            </tr>
-            <tr>
-                <td>* Ubuntu</td>
-                <td>* MEAN Stack</td>
-                <td>* Github</td>
-            </tr>
-            <tr>
-                <td>* Jekyll</td>
-                <td>* Node.js</td>
-                <td>* Python</td>
-            </tr>
-        </tbody>
-    </table>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#skills">Skills &amp; Proficiencies</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#coursework">Relevant Coursework</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">Professional Experience</a>
+            <div class="dropdown-menu" x-placement="bottom-start"
+                style="position: absolute; transform: translate3d(0px, 44px, 0px); top: 0px; left: 0px; will-change: transform;">
+                <a class="dropdown-item" href="#dropdown2">Action</a>
+                <a class="dropdown-item" href="#experience">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+        </li>
+    </ul>
 
-    <hr>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active show" id="skills">
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-warning">
+                        <th scope="col" colspan="4" class="h4">Skills &amp; Proficiencies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">HTML</th>
+                        <td>CSS</td>
+                        <td>JavaScript</td>
+                        <td>PHP</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">C/C++</th>
+                        <td>Github</td>
+                        <td>MATLAB</td>
+                        <td>Wordpress</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Swift</th>
+                        <td>Node.js</td>
+                        <td>SQL</td>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">UNIX</th>
+                        <td>Python</td>
+                        <td>Microsoft Office</td>
+                        <td>Ubuntu</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">MEAN Stack</th>
+                        <td>Abode Illustrator</td>
+                        <td>iOS App Development</td>
+                        <td>Adobe Photoshop</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane fade" id="coursework">
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-danger">
+                        <th scope="col" colspan="4" class="h4">Relevant Coursework</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--tr>
+                        <th scope="row">Intro to Operating Systems</th>
+                        <td>Programming Languages for Web Applications</td>
+                        <td>Digital Systems Laboratory</td>
+                        <td>Discrete Mathematics</td>
+                    </tr> -->
+                    <tr>
+                        <th scope="row" colspan="2">Intro to Operating Systems</th>
+                        <th scope="row" colspan="2">Programming Languages for Web Applications</th>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">Digital Systems Laboratory</th>
+                        <th scope="row" colspan="2">Discrete Mathematics</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane fade" id="experience">
+            <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro
+                fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone
+                skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings
+                gentrify squid 8-bit cred pitchfork.</p>
+        </div>
+        <div class="tab-pane fade" id="dropdown2">
+            <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master
+                cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party
+                locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before
+                they
+                sold out farm-to-table VHS viral locavore cosby sweater.</p>
 
-    <table class="table table-hover">
-        <thead>
-            <tr>
-                <th colspan="3">
-                    <h4>Relevant Coursework</h4>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <ul>
-                <tr>
-                    <td>
-                        <li>Intro to Operating Systems</li>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>Programming Languages for Web Applications</li>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>Digital Systems Laboratory</li>
-                    </td>
-                </tr>
-            </ul>
-        </tbody>
-    </table>
+        </div>
 
-    <hr>
+    </div>
+
+
 
 </div>
