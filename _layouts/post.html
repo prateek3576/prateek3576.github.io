@@ -1,14 +1,23 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
+<article>
 
-<p>
-  {{ page.date | date_to_string }}
-  {% assign author = site.authors | where: 'short_name', page.author | first %}
-  {% if author %}
-    - <a href="{{ author.url }}">{{ author.name }}</a>
-  {% endif %}
-</p>
+  <header>
+    <h1>{{ page.title | escape }}</h1>
+    <p class="text-muted">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {%- assign date_format = "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • {{ page.author }}
+      {%- endif -%}
+    </p>
+  </header>
 
-{{ content }}
+  <section>
+    {{ content }}
+  </section>
+
+</article>
