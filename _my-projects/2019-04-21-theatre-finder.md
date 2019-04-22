@@ -30,4 +30,4 @@ I worked mostly on the front-end
 
 ## We also implemented a user login
 
-### [Checkout the project here](http://theatrefinder-237619.appspot.com/)
+### [Checkout the project here]
