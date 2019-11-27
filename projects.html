@@ -6,51 +6,52 @@ permalink: projects
 
 <ul class="nav nav-tabs nav-justified">
     <li class="nav-item">
-        <a class="nav-link active bg-info h5" data-toggle="tab" href="#allProjects">All</a>
+        <a class="nav-link active bg-white border h5" data-toggle="tab" href="#allProjects">All</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link bg-success h5" data-toggle="tab" href="#webDev">Web Development</a>
+        <a class="nav-link bg-white border h5" data-toggle="tab" href="#webDev">Web Development</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link bg-danger h5" data-toggle="tab" href="#iosDev">iOS Development</a>
+        <a class="nav-link bg-white border h5" data-toggle="tab" href="#iosDev">iOS Development</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link bg-warning h5" data-toggle="tab" href="#university">College Projects</a>
+        <a class="nav-link bg-white border h5" data-toggle="tab" href="#university">College Projects</a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link h5" data-toggle="tab" href="#upcoming">Upcoming Projects</a>
-    </li>
+    <!--li class="nav-item">
+        <a class="nav-link bg-white border h5" data-toggle="tab" href="#upcoming">Upcoming Projects</a>
+    </li>-->
 </ul>
 
 <div id="myTabContent" class="tab-content">
     <div class="tab-pane fade active show" id="allProjects">
-        <div class="list-group">
+        <div class="list-group-flush">
             {% for post in site.my-projects %}
             {% if post.categories contains "all" %}
             <a href="{{ post.url }}"
-                class="list-group-item list-group-item-action flex-column align-items-start active">
+                class="list-group-item list-group-item-action flex-column align-items-start active" style="background-color: #2866a7 !important">
                 <div class="d-flex w-100 justify-content-between">
                     <h5 class="mb-1">{{ post.title }}</h5>
                     <small>{%- assign date_format = "%b %-d, %Y" -%}
                         {{ post.date | date: date_format }}</small>
                 </div>
             </a>
-            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <a href="{{ post.url }}" class="list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
                     <h5 class="mb-1">{{ post.excerpt }}</h5>
                     <small class="text-muted"><span class="badge badge-pill badge-info">{{ post.tags }}</span></small>
                 </div>
             </a>
+            <br>
             {% endif %}
             {% endfor %}
         </div>
     </div>
     <div class="tab-pane fade" id="webDev">
-        <div class="list-group">
+        <div class="list-group-flush">
             {% for post in site.my-projects %}
             {% if post.categories contains "webDev" %}
             <a href="{{ post.url }}"
-                class="list-group-item list-group-item-action flex-column align-items-start active">
+                class="list-group-item list-group-item-action flex-column align-items-start active" style="background-color: #2866a7 !important">
                 <div class="d-flex w-100 justify-content-between">
                     <h5 class="mb-1">{{ post.title }}</h5>
                     <small>{%- assign date_format = "%b %-d, %Y" -%}
@@ -68,18 +69,17 @@ permalink: projects
         </div>
     </div>
     <div class="tab-pane fade" id="iosDev">
-        <div class="list-group">
+        <div class="list-group-flush">
             {% for post in site.my-projects %}
             {% if post.categories contains "iOS" %}
             <a href="{{ post.url }}"
-                class="list-group-item list-group-item-action flex-column align-items-start active">
+                class="list-group-item list-group-item-action flex-column align-items-start active" style="background-color: #2866a7 !important">
                 <div class="d-flex w-100 justify-content-between">
                     <h5 class="mb-1">{{ post.title }}</h5>
                     <small>{%- assign date_format = "%b %-d, %Y" -%}
                         {{ post.date | date: date_format }}</small>
                 </div>
             </a>
-            <br>
             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
                     <h5 class="mb-1">{{ post.excerpt }}</h5>
@@ -91,18 +91,17 @@ permalink: projects
         </div>
     </div>
     <div class="tab-pane fade" id="university">
-        <div class="list-group">
+        <div class="list-group-flush">
             {% for post in site.my-projects %}
             {% if post.categories contains "college" %}
             <a href="{{ post.url }}"
-                class="list-group-item list-group-item-action flex-column align-items-start active">
+                class="list-group-item list-group-item-action flex-column align-items-start active" style="background-color: #2866a7 !important">
                 <div class="d-flex w-100 justify-content-between">
                     <h5 class="mb-1">{{ post.title }}</h5>
                     <small>{%- assign date_format = "%b %-d, %Y" -%}
                         {{ post.date | date: date_format }}</small>
                 </div>
             </a>
-            <br>
             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
                     <h5 class="mb-1">{{ post.excerpt }}</h5>
@@ -113,7 +112,7 @@ permalink: projects
             {% endfor %}
         </div>
     </div>
-    <div class="tab-pane fade" id="upcoming">
+    <!--div class="tab-pane fade" id="upcoming">
             <div class="list-group">
                 {% for post in site.my-projects %}
                 {% if post.categories contains "upcoming" %}
@@ -125,7 +124,6 @@ permalink: projects
                             {{ post.date | date: date_format }}</small>
                     </div>
                 </a>
-                <br>
                 <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">{{ post.excerpt }}</h5>
@@ -136,4 +134,5 @@ permalink: projects
                 {% endfor %}
             </div>
         </div>
+</div>-->
 </div>

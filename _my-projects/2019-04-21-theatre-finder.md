@@ -5,7 +5,8 @@ categories: [all, webDev, college]
 tags: [Web Development]
 ---
 
-# Me & my group made this project for CS1520 at PITT
+{:.lead}
+# Theater Finder aids the users locate the cheapest movie tickets in a theatre around them
 
 {:.lead}
 I worked mostly on the front-end
@@ -16,7 +17,7 @@ I worked mostly on the front-end
 
 {:.text-center .text-info}
 
-## This is the front page of the website. It prompts the user for the permission to use their current location and then locates the movie theatres around them
+## The front page of the website. It prompts the user for the permission to use their current location and then locates the movie theatres around them
 
 ![image]({{ site.baseurl }}/assets/images/project-img/theatre2.png){:height="30%" width="67%"}![image]({{ site.baseurl }}/assets/images/project-img/theatre3.png){:height="30%" width="32%"}
 
